@@ -1,71 +1,132 @@
-* {
+      * {
+        
             margin: 0;
             padding: 0;
-            box-sizing: border-box;  
-        }
+            box-sizing: border-box;
+
+        }  
+         
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f6f6;
-            line-height: 0.6;
+            font-family: oswald, open Sans;
+           
         }
 
-        .navlinks {
-            position: fixed;
-            width: 100%; 
-            background:rgb(0, 0, 0);
-            display:flex;
-            flex-direction:row;
-            justify-content:start;
-            align-items: start;
-            gap: 10px;
-            padding:18px 20px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            z-index:1000;
-            transition:  0.3s ;
-        }
-        
-
-        .navlinks a {
-            display: inline-block;
-            width:40px;
-            height:5px;
-            background: #000000;
-            color: rgb(255, 254, 254);
-            text-decoration: none;
-            transition: 0.3s;
-            list-style: none;
-            border-radius: 5%;
-            gap: 15px;
-        }
-
-        .side-bar a:hover {
-            transform: scale(1.1);
-        
-        }
-
-        .facebook:hover {
-            background-color: #1877F2;
-        }
-
-        .instagram:hover {
-            background-color: #E4405F;
-        }
-
-        .twitter:hover {
+        .navbar{
             background-color: black;
+            width:100%;
+            padding:0px 0px;
+            position: fixed;
+            top: 0;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            z-index:1000;
+        }
+        .icons a ,
+        .search-icon a {
+            color:white;
+            text-decoration: none;
+            font-size: 20px;
+            padding:12px 15px;
+            display:inline-block;
+        }
+        .icons a:hover,
+        .search-icon a:hover {
+            background-color: #ccc;
+            color: black;
+        }
+        .hero {
+           font-family: oswald;
+           background-color: #ffffff;
+           text-align:center;
+           padding:80px 20px;
+           display:flex;
+           flex-direction:column;
+           justify-content:center;
+
+        }
+        .hero h1{
+            font-size: 48px;
+            margin-bottom: 5px;
+            line-height: 72px;
+            font-weight: bold;  
+        }
+        .hero p{
+            font-size: 18px;
+            line-height: 28px;
+        }
+        .hero span{
+            background-color:black;
+            line-height: 24px;
+            color:white;
+            padding:4px 8px;
+            font-size: 14px;
+        }
+        .hero image{
+            width: 100%;
+            height: auto;
+            position:relative;
+        }
+        .hero image img{
+            width: 100%;
+            height: auto;
+            display:block;
+        }
+        .hero-text {
+            position:absolute;
+            font-size: oswald;
+            transform: none;
+            top: 50%;
+            left: 0%;
+            color:white;
+            text-align:left;
+            display:flex;
+            flex-direction:column;
+            justify-content:space-between;
+            align-items: flex-start;
+            
+
+        }
+        .hero-text h2{
+            font-size:40px;
+            font-weight: 200;
+            line-height:54px;
+            box-sizing:border-box;
+            letter-spacing:4px;
+            margin:5px 5px;
+
+        }
+        .hero-text h3{
+            font-size: 60px;
+            font-weight:500px;
+            letter-spacing:4px;
+            list-style:72px;
+            margin:5px 5px;
+        }
+        .subscribe-btn {
+         background-color: #cccccc;
+         color: black;
+         opacity: 70%;  
+         border: none;
+         vertical-align: left;
+         text-align:left;
+         line-height: 27px;
+         font-size: 18px;
+         font-family: Oswald;
+         white-space: nowrap;
+         padding: 12px 24px; 
+         cursor: pointer;
+         display: inline-block;
+         overflow: hidden;
+         box-sizing: border-box;
+         margin: 5px 5px;
         }
 
-        .whatsapp:hover {
-            background-color: #25D366;
+        .subscribe-btn:hover {
+         background-color: #cccccc;
+        capacity: 100%;
+         color: rgb(0, 0, 0);
         }
-        .search:hover {
-            background-color: #d9d2d2;
-        }
-     .search-box {
-             display: inline-block;
-             justify-content:end;
-             align-items: center;
-}
 
 
 
@@ -73,4 +134,7 @@
 
 
 
- 
+
+        
+
+        
