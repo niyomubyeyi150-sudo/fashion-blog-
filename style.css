@@ -159,25 +159,25 @@
       font-weight: 700;
       letter-spacing: 1px;
       margin-bottom: 8px;
-}
+      }
 
-.card-header .subtitle {
+      .card-header .subtitle {
   font-size: 15px;
   color: #333;
-}
+      }
 
-.card-header .date {
-  color: #777;
-}
+      .card-header .date {
+       color: #777;
+      }
 
-.card-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-  padding: 0 20px; /* Gives the image a slight inner padding relative to the card border */
-}
+      .card-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+        padding: 0 20px; /* Gives the image a slight inner padding relative to the card border */
+      }
 
-.card-body {
+      .card-body {
   padding: 20px;
   font-size: 15px;
 }
@@ -340,100 +340,69 @@ content-main h6{
   }
 }
 /* --- NEW ADDITIONS: Remaining Sidebar Components --- */
-.ad-box{
-    padding:40px 20px;
-    background-color:#f9f9f9;
-    text-align: center;
-    border:1px dashed #ccc;
-    margin:16px;
-    color:#666;
-
-}
-
-/* --- 1. Tags Section Specifics --- */
-.tag-cloud {
-  display: flex;
-  flex-wrap: wrap; /* Allows tags to break to the next line automatically */
-  gap: 6px;        /* Spacing between individual tags */
-}
-/* Tags Layout */
-.tag-cloud {
-  display: flex;
-  flex-wrap: wrap;
+.tag-cloud{
+  display:flex;
+  flex-wrap:  wrap;
   gap: 6px;
 }
-
-.tag {
+.tag{
   background-color: #f1f1f1;
-  color: #000000;
-  padding: 4px 8px;
-  font-size: 12px;
+  color:#000000;
+  padding:4px 8px;
+  font-size:12px;
+  
+}
+.black-tag{
+  background-color:#000000;
+  color:#f1f1f1
 
 }
-
-.black-tag {
-  background-color: #000;
-  color: #fff;
-}
-
-/* Inspiration Grid (2x2 layout) */
+* Inspiration block 2x2 grid alignment */
 .grid-inspiration {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr; /* Forms the exact 2 columns in the image template */
   gap: 8px;
   padding: 16px;
 }
 
 .grid-inspiration img {
-    width:50%;
-    height:50%
-  display: grid;
-  grid-template-columns:1fr 1rf;
-  gap:8px;
-  padding:16px;
+  width: 50%;
+  height: auto;
 }
 
-/* Social icons block */
+/* Horizontal line alignment for social links */
 .social-icons span {
-  font-size: 18px;
-  margin-right: 12px;
+  font-size: 16px;
+  margin-right: 10px;
   cursor: pointer;
 }
 
-/* Subscribe UI formatting */
+/* Subscribe entry fields and buttons block alignment */
 .subscribe-form p {
   font-size: 14px;
   margin-bottom: 12px;
 }
 
 .sub-input {
-  width: 50%;
-  padding: 10px;
+  width: 100%;
+  padding: 8px;
   border: 1px solid #ccc;
   margin-bottom: 12px;
 }
 
 .btn-subscribe {
-  width: 50%;
-  background-color: #ff5722; /* Classic orange alert color from the template image */
-  color: #fff;
+  width: 100%;
+  background-color: #ff5722; /* Matches the dark orange/red submit banner button color */
+  color: #ffffff;
   border: none;
   padding: 10px;
-  cursor: pointer;
   font-weight: bold;
+  cursor: pointer;
 }
 
-.btn-subscribe:hover {
-  background-color: #e64a19;
+/* Clean Responsive Stacking for small viewports */
+@media (max-width: 850px) {
+  .blog-container {
+    grid-template-columns: 1fr;
+  }
 }
-
-
-
-
-
-
-
-
-        
-
-        
