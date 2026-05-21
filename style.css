@@ -26,9 +26,10 @@
         .search-icon a {
             color:white;
             text-decoration: none;
-            font-size: 20px;
-            padding:12px 15px;
+            font-size: 15px;
+            padding:10px 10px;
             display:inline-block;
+    
         }
         .icons a:hover,
         .search-icon a:hover {
@@ -39,10 +40,11 @@
            font-family: oswald;
            background-color: #ffffff;
            text-align:center;
-           padding:80px 20px;
+           padding:60px 20px;
            display:flex;
            flex-direction:column;
            justify-content:center;
+           align-items: center ;
 
         }
         .hero h1{
@@ -66,6 +68,7 @@
             width: 100%;
             height: auto;
             position:relative;
+            margin-bottom:24px;
         }
         .hero image img{
             width: 100%;
@@ -74,17 +77,13 @@
         }
         .hero-text {
             position:absolute;
-            font-size: oswald;
-            transform: none;
-            top: 50%;
-            left: 0%;
+             top: 80%;
+            left: 10px;
+             transform: translateY(100%);
             color:white;
-            text-align:left;
-            display:flex;
-            flex-direction:column;
-            justify-content:space-between;
-            align-items: flex-start;
-            position:-ms-page;
+            font-family:"Segoes UI";
+            
+            
             
 
         }
@@ -273,6 +272,17 @@ content-main h6{
 .widget-content h3 {
   margin-bottom: 10px;
 }
+         .widget-content social icons{
+           color:white;
+            text-decoration: none;
+            font-size: 15px;
+            padding:12px 15px;
+            display:inline-block;
+}
+.social-icons :hover{
+  background-color: #ccc;
+            color: black;
+}
 
 /* Profile specific adjustment */
 .profile-img {
@@ -357,7 +367,7 @@ content-main h6{
   color:#f1f1f1
 
 }
-* Inspiration block 2x2 grid alignment */
+/* Inspiration block 2x2 grid alignment */
 .grid-inspiration {
   display: grid;
   grid-template-columns: 1fr 1fr; /* Forms the exact 2 columns in the image template */
@@ -366,7 +376,7 @@ content-main h6{
 }
 
 .grid-inspiration img {
-  width: 50%;
+  width: 100%;
   height: auto;
 }
 
